@@ -4,6 +4,12 @@
 Busca Semantica IA
 </h1>
 
+<p align="center">
+    <img src="https://img.shields.io/node/v/langchain">
+    <img src="https://img.shields.io/github/languages/top/CrisnaldoSantos/busca-semantica-ia">
+    <img src="https://img.shields.io/github/package-json/v/CrisnaldoSantos/busca-semantica-ia/main">
+</p>
+
 Aplicação de estudo, implementada em scripts node de forma simplista, sobre langchain que utiliza modelos GPT e Embbedings da openAi, ao qual é tratada as informações do livro "A arte da guerra" de Sun Tzu.
 
 É realizada a leitura do arquivo, feita sua transformação em chunks, e utilizado o modelo de embbedings para salva-los de forma semântica em um banco Redis vetorial.
@@ -12,6 +18,10 @@ A partir do RedisVectorStore como retriever, é criado uma Chain, utilizando o G
 Como o objetivo de estudo era as conexões de modelos com o langchain, foi criado um sevidor extremamente simples em express apenas para emular uma aplicação final por uma rota post.
 
 ### Executando o projeto
+
+Node 18^
+
+Pnpm 8^
 
 Crie o Arquivo .env com base no .env.example e popule com sua OPENAI_API_KEY
 
